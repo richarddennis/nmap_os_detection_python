@@ -1,7 +1,3 @@
-#Have nmap installed (not the python library)
-#Run as SU
-
-
 import nmap
 nm = nmap.PortScanner()
 
@@ -24,4 +20,4 @@ with open("IP_address_bridges.txt") as f:
 #					print('')
 
 					with open("os_data_bridges.json", "a") as myfile:
-						myfile.write('{"IP_address": "' + IP_address + '", "vendor": "' + osclass['vendor'] + '", "osfamily": "' + osclass['osfamily']+'", "type": "' +osclass['type']+ +'", "accuracy": "' +osclass['accuracy']+'"\n')
+						myfile.write('{"IP_address": "' + IP_address + '", "vendor": "' + osclass['vendor'] + '", "osfamily": "' + osclass['osfamily']+'", "type": "' +osclass['type']+ +'", "accuracy": "' +osclass['accuracy']+'"}\n')
