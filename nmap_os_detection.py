@@ -2,7 +2,7 @@ import nmap
 nm = nmap.PortScanner()
 
 
-with open("IP_address_bridges.txt") as f:
+with open("no_dup_ip.txt") as f:
 	for IP_address in f: 
 		IP_address = IP_address.rstrip()
 		print "IP address " + IP_address
